@@ -1,25 +1,25 @@
-# python-
+# python
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My HTML Page</title>
-</head>
-<body>
+<h1>For Loop Practice (Python)</h1>
 
-    <h1>Python Data Types</h1>
+<h2>Example 1: Print numbers from 1 to 5</h2>
 
-    <p>This page contains information about Python data types.</p>
+<pre><code>
+for i in range(1, 6):
+    print(i)
+</code></pre>
 
-    <h2>Integer</h2>
-    <p>int is used to store whole numbers.</p>
+<h2>Example 2: Print even numbers</h2>
 
-    <h2>String</h2>
-    <p>str is used to store text.</p>
+<pre><code>
+for i in range(1, 11):
+    if i % 2 == 0:
+        print(i)
+</code></pre>
 
-    <h2>List</h2>
-    <p>List is a collection which is ordered and mutable.</p>
+<h2>Explanation</h2>
+<p>
+The <b>for loop</b> in Python is used to iterate over a sequence such as
+a list, tuple, string, or range.
+</p>
 
-</body>
-</html>
