@@ -174,3 +174,49 @@ This document covers basic Python concepts with simple definitions and examples,
 making it easy for beginners to understand and practice.
 </p>
 
+<h1>Intermediate Python</h1>
+
+<h2>🔹 Definition</h2>
+<p>
+A loop is used to execute a block of code repeatedly until a condition is met.
+</p>
+
+<h2>🔹 Example</h2>
+
+<pre><code class="language-python">
+for i in range(1, 6):
+    print(i)
+</code></pre>
+
+<hr>
+
+<h2>🔹 Definition</h2>
+<p>
+A function is a reusable block of code that performs a specific task.
+</p>
+
+<h2>🔹 Example</h2>
+
+<pre><code class="language-python">
+def add(a, b):
+    return a + b
+
+print(add(5, 3))
+</code></pre>
+
+<hr>
+
+<h2>🔹 Definition</h2>
+<p>
+List comprehension provides a concise way to create lists.
+</p>
+
+<h2>🔹 Example</h2>
+
+<pre><code class="language-python">
+numbers = [1, 2, 3, 4]
+squares = [n*n for n in numbers]
+print(squares)
+</code></pre>
+
+
