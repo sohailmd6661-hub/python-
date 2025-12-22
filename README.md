@@ -1,25 +1,65 @@
 # python
 
-<h1>For Loop Practice (Python)</h1>
+<h1>Basic Python</h1>
 
-<h2>Example 1: Print numbers from 1 to 5</h2>
+<h2>Introduction</h2>
+<p>This document covers basic Python concepts with examples.</p>
 
-<pre><code>
+<h2>Variables</h2>
+<p>Variables are used to store data values.</p>
+<pre>
+x = 10
+name = "Sohail"
+print(x, name)
+</pre>
+
+<h2>Data Types</h2>
+<ul>
+  <li>int</li>
+  <li>float</li>
+  <li>string</li>
+  <li>list</li>
+  <li>tuple</li>
+  <li>set</li>
+  <li>dictionary</li>
+</ul>
+
+<h2>String Example</h2>
+<pre>
+s = "Python"
+print(s.upper())
+print(len(s))
+</pre>
+
+<h2>List Example</h2>
+<pre>
+numbers = [1, 2, 3, 4, 5]
+numbers.append(6)
+print(numbers)
+</pre>
+
+<h2>For Loop</h2>
+<pre>
 for i in range(1, 6):
     print(i)
-</code></pre>
+</pre>
 
-<h2>Example 2: Print even numbers</h2>
+<h2>While Loop</h2>
+<pre>
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+</pre>
 
-<pre><code>
-for i in range(1, 11):
-    if i % 2 == 0:
-        print(i)
-</code></pre>
+<h2>Function Example</h2>
+<pre>
+def add(a, b):
+    return a + b
 
-<h2>Explanation</h2>
-<p>
-The <b>for loop</b> in Python is used to iterate over a sequence such as
-a list, tuple, string, or range.
-</p>
+result = add(10, 20)
+print(result)
+</pre>
 
+<h2>Conclusion</h2>
+<p>This file explains basic Python concepts useful for beginners.</p>
