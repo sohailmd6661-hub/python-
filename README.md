@@ -219,4 +219,84 @@ squares = [n*n for n in numbers]
 print(squares)
 </code></pre>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Exception Handling</title>
+</head>
+<body>
+
+<h1>Python Exception Handling</h1>
+
+<p>
+Exception handling is used to handle runtime errors so that the normal flow of the program is not interrupted.
+</p>
+
+<h2>What is an Exception?</h2>
+<p>
+An exception is an error that occurs during the execution of a program.
+</p>
+
+<h2>Common Python Exceptions</h2>
+<ul>
+    <li>ZeroDivisionError</li>
+    <li>ValueError</li>
+    <li>NameError</li>
+    <li>TypeError</li>
+    <li>IndexError</li>
+</ul>
+
+<h2>Example: try and except</h2>
+
+<pre>
+try:
+    a = 10
+    b = 0
+    print(a / b)
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+</pre>
+
+<h2>Example: try, except, else</h2>
+
+<pre>
+try:
+    x = 10
+    y = 2
+    print(x / y)
+except ZeroDivisionError:
+    print("Error")
+else:
+    print("Division successful")
+</pre>
+
+<h2>Example: try, except, finally</h2>
+
+<pre>
+try:
+    n = 5
+    s = 0
+    for i in range(1, n):
+        if n % i == 0:
+            s += i
+    if s == n:
+        print("Perfect Number")
+    else:
+        print("Not a Perfect Number")
+except Exception as e:
+    print(e)
+finally:
+    print("Done")
+</pre>
+
+<h2>Why use Exception Handling?</h2>
+<ul>
+    <li>Prevents program crash</li>
+    <li>Handles runtime errors</li>
+    <li>Makes code safe and readable</li>
+</ul>
+
+</body>
+</html>
 
