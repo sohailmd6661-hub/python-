@@ -508,5 +508,142 @@ e1.display()
 </ul>
 
 </body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OOPS Constructor Programs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            padding: 30px;
+        }
+        h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #1e1e1e;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Constructor without parameters</h2>
+<pre><code>
+class MECH:
+    f = 20
+
+    def __init__(self):
+        print('Good Morning')
+
+anil = MECH()
+</code></pre>
+
+<h2>Constructor with parameters</h2>
+<pre><code>
+class MECH:
+    f = 20
+
+    def __init__(self, a):
+        print('Good Morning', a)
+
+anil = MECH(10)
+</code></pre>
+
+<h2>Constructor with multiple methods</h2>
+<pre><code>
+class CSE:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def addition(self):
+        print(self.a + self.b)
+
+    def subtraction(self):
+        print(self.a - self.b)
+
+anil = CSE(6, 8)
+anil.addition()
+anil.subtraction()
+</code></pre>
+
+<h2>Calculator without constructor</h2>
+<pre><code>
+class CALCULATOR:
+    a = 6
+    b = 8
+
+    def addition(self):
+        print(self.a + self.b)
+
+    def subtraction(self):
+        print(self.a - self.b)
+
+    def multiply(self):
+        print(self.a * self.b)
+
+    def division(self):
+        print(self.a / self.b)
+
+anil = CALCULATOR()
+anil.addition()
+anil.subtraction()
+anil.multiply()
+anil.division()
+</code></pre>
+
+<h2>Calculator with constructor</h2>
+<pre><code>
+class CALCULATOR:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def addition(self):
+        print(self.a + self.b)
+
+    def subtraction(self):
+        print(self.a - self.b)
+
+    def multiply(self):
+        print(self.a * self.b)
+
+    def division(self):
+        print(self.a / self.b)
+
+anil = CALCULATOR(6, 8)
+anil.addition()
+anil.subtraction()
+anil.multiply()
+anil.division()
+</code></pre>
+
+<h2>Prime Number Program</h2>
+<pre><code>
+class PRIME:
+    def calculation(self, a, b):
+        for i in range(a, b):
+            if i > 1:
+                for j in range(2, i):
+                    if i % j == 0:
+                        print(f'Not Prime : {i}')
+                        break
+                else:
+                    print(f'Prime : {i}')
+
+anil = PRIME()
+anil.calculation(1, 101)
+</code></pre>
+
+</body>
+</html>
+
 </html>
 
