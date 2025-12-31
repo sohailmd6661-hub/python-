@@ -299,4 +299,214 @@ finally:
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exception Handling in Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Exception Handling in Python</h1>
+
+<h2>What is Exception Handling?</h2>
+<ul>
+    <li>Exception means <b>Error</b></li>
+    <li>It prevents program termination</li>
+    <li>Handled using <b>try, except, else, finally</b></li>
+</ul>
+
+<h2>Syntax Error</h2>
+<pre><code>
+190S = 100
+print(190S)
+</code></pre>
+
+<h2>ZeroDivisionError</h2>
+<pre><code>
+50 / 0
+</code></pre>
+
+<h2>NameError</h2>
+<pre><code>
+AREA = "HYDERABAD"
+print(area)
+</code></pre>
+
+<h2>ValueError</h2>
+<pre><code>
+a = "1882S"
+print(int(a))
+</code></pre>
+
+<h2>IndentationError</h2>
+<pre><code>
+for i in range(1, 11):
+print(i)
+</code></pre>
+
+<h2>FileNotFoundError</h2>
+<pre><code>
+with open("sohail.txt", "r") as f:
+    print(f.read())
+</code></pre>
+
+<h2>Real Time Example (try-except)</h2>
+<pre><code>
+try:
+    a = 1067
+    b = 2009
+    print(b / a)
+except Exception as e:
+    print(e)
+</code></pre>
+
+<h2>Perfect Number with Exception Handling</h2>
+<pre><code>
+n = 5
+s = 0
+
+try:
+    for i in range(1, n):
+        if n % i == 0:
+            s += i
+    if s == n:
+        print("Perfect Number")
+    else:
+        print("Not a Perfect Number")
+except Exception as e:
+    print("An error occurred:", e)
+finally:
+    print("Done")
+</code></pre>
+
+<h2>Practice Errors</h2>
+
+<h3>ZeroDivisionError</h3>
+<pre><code>
+a = 45
+b = 0
+print(a / b)
+</code></pre>
+
+<h3>ValueError</h3>
+<pre><code>
+a = "4k"
+b = int(a)
+print(b)
+</code></pre>
+
+<h3>NameError</h3>
+<pre><code>
+a = "sohail"
+print(h)
+</code></pre>
+
+<h3>TypeError</h3>
+<pre><code>
+a = 10
+b = "5"
+print(a + b)
+</code></pre>
+
+<h3>IndexError</h3>
+<pre><code>
+a = [10, 20, 30]
+print(a[5])
+</code></pre>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>class_object_self</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            background-color: #ffffff;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background: #f5f5f5;
+            padding: 10px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+        code {
+            color: #c7254e;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Class, Object & self (Python)</h1>
+
+<h2>Example 1: Class and Object</h2>
+
+<pre><code>
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def show(self):
+        print(self.name, self.age)
+
+s1 = Student("Sohail", 22)
+s1.show()
+</code></pre>
+
+<h2>Example 2: Using self keyword</h2>
+
+<pre><code>
+class Employee:
+    def details(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def display(self):
+        print(self.name, self.salary)
+
+e1 = Employee()
+e1.details("Rahul", 25000)
+e1.display()
+</code></pre>
+
+<h2>Explanation</h2>
+<ul>
+    <li><b>Class</b>: Blueprint of an object</li>
+    <li><b>Object</b>: Instance of a class</li>
+    <li><b>self</b>: Refers to current object</li>
+</ul>
+
+</body>
+</html>
 
