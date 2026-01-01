@@ -647,3 +647,100 @@ anil.calculation(1, 101)
 
 </html>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inheritance in Python</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 6px;
+        }
+        code {
+            font-family: Consolas, monospace;
+        }
+        .box {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Inheritance in Python</h1>
+
+    <div class="box">
+        <h2>What is Inheritance?</h2>
+        <p>
+            Inheritance is an OOP concept where one class (child class)
+            acquires the properties and methods of another class (parent class).
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>Single Inheritance Example</h2>
+        <pre><code>
+class Parent:
+    def show(self):
+        print("This is Parent class")
+
+class Child(Parent):
+    def display(self):
+        print("This is Child class")
+
+obj = Child()
+obj.show()
+obj.display()
+        </code></pre>
+    </div>
+
+    <div class="box">
+        <h2>Multilevel Inheritance Example</h2>
+        <pre><code>
+class GrandParent:
+    def gshow(self):
+        print("Grand Parent class")
+
+class Parent(GrandParent):
+    def pshow(self):
+        print("Parent class")
+
+class Child(Parent):
+    def cshow(self):
+        print("Child class")
+
+obj = Child()
+obj.gshow()
+obj.pshow()
+obj.cshow()
+        </code></pre>
+    </div>
+
+    <div class="box">
+        <h2>Advantages of Inheritance</h2>
+        <ul>
+            <li>Code reusability</li>
+            <li>Easy maintenance</li>
+            <li>Improves readability</li>
+        </ul>
+    </div>
+
+</body>
+</html>
