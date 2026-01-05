@@ -645,6 +645,212 @@ anil.calculation(1, 101)
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NumPy arange 1D Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        .output {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-left: 5px solid #3498db;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>NumPy <code>arange()</code> – 1D Array Example</h1>
+
+    <p>
+        <strong>Note:</strong> <code>arange()</code> generates only <b>1D data</b> 
+        and follows <b>(n − 1)</b> logic.
+    </p>
+
+    <h2>Python Code</h2>
+    <pre><code>
+import numpy as np
+
+# arange = only 1D data with (n-1) logic
+a = np.arange(10, 32)
+
+print(a)
+print(a.ndim)
+    </code></pre>
+
+    <h2>Output</h2>
+    <div class="output">
+        <pre>
+[10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31]
+1
+        </pre>
+    </div>
+
+    <h2>Explanation</h2>
+    <ul>
+        <li><b>np.arange(10, 32)</b> → starts at 10 and ends at 31</li>
+        <li><b>ndim = 1</b> → confirms it is a 1D array</li>
+        <li>Default step value is 1</li>
+    </ul>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NumPy arange 1D Array</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        .output {
+            background-color: #ffffff;
+            padding: 12px;
+            border-left: 5px solid #007acc;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>NumPy <code>arange()</code> – 1D Array</h1>
+
+    <p>
+        <b>arange()</b> generates only <b>1D data</b> and follows
+        <b>(n − 1)</b> logic.
+    </p>
+
+    <h2>Python Code</h2>
+    <pre><code>
+import numpy as np
+
+# arange = only 1D data with (n-1) logic
+a = np.arange(10, 32)
+
+print(a)
+print(a.ndim)
+    </code></pre>
+
+    <h2>Output</h2>
+    <div class="output">
+        <pre>
+[10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31]
+1
+        </pre>
+    </div>
+
+    <h2>Explanation</h2>
+    <ul>
+        <li>Starts from <b>10</b></li>
+        <li>Ends at <b>31</b> (32 − 1)</li>
+        <li>Creates a <b>1D NumPy array</b></li>
+        <li><b>ndim = 1</b> confirms 1D</li>
+    </ul>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python & NumPy Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: Consolas, monospace;
+        }
+        p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<h1>NumPy Array Examples</h1>
+
+<h2>2D NumPy Array</h2>
+
+<pre><code>
+import numpy as np
+
+# 2D array
+a = np.array([
+    [10, 1, 9],
+    [3, 6, 7],
+    [2, 4, 8]
+])
+
+print(a)
+</code></pre>
+
+<h2>Using arange()</h2>
+
+<p>
+<code>np.arange()</code> is used to create only 1D arrays using (n-1) logic.
+</p>
+
+<pre><code>
+a = np.arange(10, 32)
+print(a)
+print(a.ndim)
+</code></pre>
+
+<h2>Explanation</h2>
+
+<ul>
+    <li><b>np.array()</b> can create both 1D and 2D arrays.</li>
+    <li><b>np.arange()</b> always creates a 1D array.</li>
+    <li><b>ndim</b> returns the number of dimensions of an array.</li>
+</ul>
+
+</body>
+</html>
 
 
 
