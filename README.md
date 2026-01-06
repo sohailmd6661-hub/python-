@@ -741,6 +741,182 @@ class PRIME:
                         break
                 else:
                     print(f'Prime : {i}')
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Inheritance</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<style>
+/* Jupyter Notebook default styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+               Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background: #ffffff;
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+pre {
+  background: #f6f8fa;
+  padding: 12px;
+  overflow-x: auto;
+  border-radius: 6px;
+}
+
+code {
+  font-family: Consolas, Monaco, "Courier New", monospace;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.output {
+  margin-top: 10px;
+  background: #fafafa;
+  padding: 10px;
+  border-left: 4px solid #4caf50;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Inheritance</h1>
+
+<h2>Single Inheritance</h2>
+<pre><code>
+class Parent:
+    def show(self):
+        print("This is Parent class")
+
+class Child(Parent):
+    def display(self):
+        print("This is Child class")
+
+obj = Child()
+obj.show()
+obj.display()
+</code></pre>
+
+<div class="output">
+This is Parent class<br/>
+This is Child class
+</div>
+
+<hr/>
+
+<h2>Multilevel Inheritance</h2>
+<pre><code>
+class A:
+    def methodA(self):
+        print("Class A")
+
+class B(A):
+    def methodB(self):
+        print("Class B")
+
+class C(B):
+    def methodC(self):
+        print("Class C")
+
+obj = C()
+obj.methodA()
+obj.methodB()
+obj.methodC()
+</code></pre>
+
+<hr/>
+
+<h2>Multiple Inheritance</h2>
+<pre><code>
+class Father:
+    def fshow(self):
+        print("Father class")
+
+class Mother:
+    def mshow(self):
+        print("Mother class")
+
+class Child(Father, Mother):
+    def cshow(self):
+        print("Child class")
+
+obj = Child()
+obj.fshow()
+obj.mshow()
+obj.cshow()
+</code></pre>
+
+<hr/>
+
+<h2>Hierarchical Inheritance</h2>
+<pre><code>
+class Parent:
+    def show(self):
+        print("Parent class")
+
+class Child1(Parent):
+    pass
+
+class Child2(Parent):
+    pass
+
+obj1 = Child1()
+obj2 = Child2()
+
+obj1.show()
+obj2.show()
+</code></pre>
+
+<hr/>
+
+<h2>Hybrid Inheritance</h2>
+<pre><code>
+class A:
+    def showA(self):
+        print("Class A")
+
+class B(A):
+    def showB(self):
+        print("Class B")
+
+class C(A):
+    def showC(self):
+        print("Class C")
+
+class D(B, C):
+    def showD(self):
+        print("Class D")
+
+obj = D()
+obj.showA()
+obj.showB()
+obj.showC()
+obj.showD()
+</code></pre>
+
+<hr/>
+
+<p><strong>Note:</strong> This HTML file is converted from a Jupyter Notebook and is
+ready to upload to GitHub.</p>
+
+</body>
+</html>
 
 
 
