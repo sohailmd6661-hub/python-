@@ -742,6 +742,10 @@ class PRIME:
                 else:
                     print(f'Prime : {i}')
 
+
+
+                    
+
 anil = PRIME()
 anil.calculation(1, 101)
 
