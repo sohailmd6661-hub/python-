@@ -869,7 +869,148 @@ obj.showD()
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Polymorphism and Abstraction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+pre {
+  background: #f6f8fa;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: Consolas, monospace;
+}
+
+.output {
+  background: #f0fff4;
+  border-left: 4px solid #2ecc71;
+  padding: 10px;
+  margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Polymorphism and Abstraction</h1>
+
+<hr>
+
+<h2>Polymorphism Example</h2>
+<pre><code>
+class Animal:
+    def sound(self):
+        print("Animal makes a sound")
+
+class Dog(Animal):
+    def sound(self):
+        print("Dog barks")
+
+class Cat(Animal):
+    def sound(self):
+        print("Cat meows")
+
+animals = [Dog(), Cat()]
+
+for a in animals:
+    a.sound()
+</code></pre>
+
+<div class="output">
+Dog barks<br>
+Cat meows
+</div>
+
+<hr>
+
+<h2>Method Overloading (Example)</h2>
+<pre><code>
+class Math:
+    def add(self, a=0, b=0, c=0):
+        return a + b + c
+
+obj = Math()
+print(obj.add(2, 3))
+print(obj.add(2, 3, 4))
+</code></pre>
+
+<hr>
+
+<h2>Method Overriding</h2>
+<pre><code>
+class Parent:
+    def show(self):
+        print("This is Parent class")
+
+class Child(Parent):
+    def show(self):
+        print("This is Child class")
+
+obj = Child()
+obj.show()
+</code></pre>
+
+<div class="output">
+This is Child class
+</div>
+
+<hr>
+
+<h2>Abstraction Example</h2>
+<pre><code>
+from abc import ABC, abstractmethod
+
+class Vehicle(ABC):
+
+    @abstractmethod
+    def start(self):
+        pass
+
+class Bike(Vehicle):
+    def start(self):
+        print("Bike starts with kick")
+
+class Car(Vehicle):
+    def start(self):
+        print("Car starts with key")
+
+b = Bike()
+c = Car()
+
+b.start()
+c.start()
+</code></pre>
+
+<div class="output">
+Bike starts with kick<br>
+Car starts with key
+</div>
+
+<hr>
+
+<p><strong>
+
+</body>
+</html>
 
                     
 
