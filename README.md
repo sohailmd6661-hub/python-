@@ -742,6 +742,9 @@ class PRIME:
                 else:
                     print(f'Prime : {i}')
 <!DOCTYPE html>
+anil = PRIME()
+anil.calculation(1, 101)
+
 
 <html lang="en">
 <head>
@@ -922,8 +925,6 @@ ready to upload to GitHub.</p>
 
                     
 
-anil = PRIME()
-anil.calculation(1, 101)
 
 
 
