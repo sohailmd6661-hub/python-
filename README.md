@@ -1012,7 +1012,7 @@ Car starts with key
 </body>
 </html>
 
-
+# production python
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1046,7 +1046,7 @@ code {
 
 <div class="cell">
 <pre><code>
-# Your notebook code appears here
+
 </code></pre>
 </div>
 
