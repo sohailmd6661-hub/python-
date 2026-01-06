@@ -746,58 +746,7 @@ anil = PRIME()
 anil.calculation(1, 101)
 
 
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<title>Inheritance</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
-<style>
-/* Jupyter Notebook default styles */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-               Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
-  padding: 20px;
-  background: #ffffff;
-  color: #333;
-}
-
-h1, h2, h3, h4 {
-  font-weight: 600;
-}
-
-pre {
-  background: #f6f8fa;
-  padding: 12px;
-  overflow-x: auto;
-  border-radius: 6px;
-}
-
-code {
-  font-family: Consolas, Monaco, "Courier New", monospace;
-}
-
-table {
-  border-collapse: collapse;
-  margin: 10px 0;
-}
-
-th, td {
-  border: 1px solid #ccc;
-  padding: 8px;
-}
-
-.output {
-  margin-top: 10px;
-  background: #fafafa;
-  padding: 10px;
-  border-left: 4px solid #4caf50;
-}
-</style>
-</head>
-
-<body>
 
 <h1>Inheritance</h1>
 
@@ -915,8 +864,7 @@ obj.showD()
 
 <hr/>
 
-<p><strong>Note:</strong> This HTML file is converted from a Jupyter Notebook and is
-ready to upload to GitHub.</p>
+<p><strong>
 
 </body>
 </html>
