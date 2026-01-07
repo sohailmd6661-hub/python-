@@ -1100,60 +1100,185 @@ code {
 </head>
 <body>
 
-<h1>NumPy Practice Notebook</h1>
 
-<div class="cell">
-    <h3>Creating and Reshaping Array</h3>
-    <pre>
+
+
+
+## NUMPY 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NumPy Full Practice Notebook</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #1e293b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 25px;
+        }
+
+        .cell {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0f172a;
+        }
+
+        pre {
+            background-color: #0f172a;
+            color: #e5e7eb;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 14px;
+        }
+
+        .output {
+            background-color: #ecfeff;
+            border-left: 5px solid #22c55e;
+            padding: 12px;
+            margin-top: 12px;
+            font-family: Consolas, monospace;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>NumPy Practice – Full HTML Notebook</h1>
+    <p>Converted from Jupyter Notebook</p>
+</header>
+
+<section>
+
+    <!-- Cell 1 -->
+    <div class="cell">
+        <h2>1. Creating NumPy Array</h2>
+        <pre>
 import numpy as np
 
-x = np.array([10,11,14,17,19,16])
+x = np.array([10, 11, 14, 17, 19, 16])
 print(x)
 print(x.ndim)
 print(x.shape)
+        </pre>
 
-y = x.reshape(2,3)
+        <div class="output">
+            [10 11 14 17 19 16]<br>
+            1<br>
+            (6,)
+        </div>
+    </div>
+
+    <!-- Cell 2 -->
+    <div class="cell">
+        <h2>2. Reshape Array</h2>
+        <pre>
+y = x.reshape(2, 3)
 print(y)
 print(y.ndim)
 print(y.shape)
 print(y.size)
-    </pre>
-    <div class="output">
-        [10 11 14 17 19 16]<br>
-        1<br>
-        (6,)<br>
-        [[10 11 14]<br>
-         [17 19 16]]<br>
-        2<br>
-        (2, 3)<br>
-        6
-    </div>
-</div>
+        </pre>
 
-<div class="cell">
-    <h3>Array Operations</h3>
-    <pre>
+        <div class="output">
+            [[10 11 14]<br>
+             [17 19 16]]<br>
+            2<br>
+            (2, 3)<br>
+            6
+        </div>
+    </div>
+
+    <!-- Cell 3 -->
+    <div class="cell">
+        <h2>3. Another Reshape Example</h2>
+        <pre>
 z = np.array([1,2,3,4,5,6,7,8,9,10])
 print(z.reshape(2,5))
-    </pre>
-</div>
+        </pre>
 
-<div class="cell">
-    <h3>Matrix Multiplication (matmul)</h3>
-    <pre>
-a = np.array([[1,4],[7,6]])
-b = np.array([[4,3,2],[1,8,6]])
-
-print(np.matmul(a,b))
-    </pre>
-    <div class="output">
-        [[ 8 35 26]<br>
-         [34 69 50]]
+        <div class="output">
+            [[ 1  2  3  4  5]<br>
+             [ 6  7  8  9 10]]
+        </div>
     </div>
-</div>
+
+    <!-- Cell 4 -->
+    <div class="cell">
+        <h2>4. Matrix Multiplication (matmul)</h2>
+        <pre>
+a = np.array([[1,4],
+              [7,6]])
+
+b = np.array([[4,3,2],
+              [1,8,6]])
+
+result = np.matmul(a, b)
+print(result)
+        </pre>
+
+        <div class="output">
+            [[ 8 35 26]<br>
+             [34 69 50]]
+        </div>
+    </div>
+
+    <!-- Cell 5 -->
+    <div class="cell">
+        <h2>5. Array Properties Summary</h2>
+        <pre>
+print("Dimensions:", y.ndim)
+print("Shape:", y.shape)
+print("Size:", y.size)
+print("Data Type:", y.dtype)
+        </pre>
+
+        <div class="output">
+            Dimensions: 2<br>
+            Shape: (2, 3)<br>
+            Size: 6<br>
+            Data Type: int32
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 NumPy Practice | HTML Notebook</p>
+</footer>
 
 </body>
 </html>
+
                     
 
 
