@@ -1044,14 +1044,14 @@ code {
 
 <h1>PP_MP_MT Notebook</h1>
 
-<p>This HTML file was generated from a Jupyter Notebook.</p>
+<p>
 
 <hr/>
 
 <h2>Notebook Content</h2>
 
 <pre>
-[Your notebook output and code cells are rendered here exactly as in Jupyter]
+
 </pre>
 
 </body>
