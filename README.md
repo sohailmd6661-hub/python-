@@ -1277,9 +1277,7 @@ print("Data Type:", y.dtype)
 </footer>
 
 </body>
-</html>
-
-                    
+</html>             
 
 
 
