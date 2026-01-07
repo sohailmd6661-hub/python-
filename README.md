@@ -1013,7 +1013,7 @@ Car starts with key
 </html>
 
 
-#PP-MP-MT
+## PP-MP-MT
 <!DOCTYPE html>
 
 <html lang="en">
@@ -1043,7 +1043,8 @@ code {
 
 <body>
 
-<h1>PP_MP_MT Notebook</h1>
+<h1> 
+</h1>
 
 <p>
 
@@ -1059,7 +1060,100 @@ code {
 </html>
 
 
-## numpy
+## NUMPY
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NumPy Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .cell {
+            background: #ffffff;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 12px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+        .output {
+            background: #eef2f3;
+            padding: 10px;
+            margin-top: 10px;
+            border-left: 4px solid #4caf50;
+            font-family: Consolas, monospace;
+        }
+    </style>
+</head>
+<body>
+
+<h1>NumPy Practice Notebook</h1>
+
+<div class="cell">
+    <h3>Creating and Reshaping Array</h3>
+    <pre>
+import numpy as np
+
+x = np.array([10,11,14,17,19,16])
+print(x)
+print(x.ndim)
+print(x.shape)
+
+y = x.reshape(2,3)
+print(y)
+print(y.ndim)
+print(y.shape)
+print(y.size)
+    </pre>
+    <div class="output">
+        [10 11 14 17 19 16]<br>
+        1<br>
+        (6,)<br>
+        [[10 11 14]<br>
+         [17 19 16]]<br>
+        2<br>
+        (2, 3)<br>
+        6
+    </div>
+</div>
+
+<div class="cell">
+    <h3>Array Operations</h3>
+    <pre>
+z = np.array([1,2,3,4,5,6,7,8,9,10])
+print(z.reshape(2,5))
+    </pre>
+</div>
+
+<div class="cell">
+    <h3>Matrix Multiplication (matmul)</h3>
+    <pre>
+a = np.array([[1,4],[7,6]])
+b = np.array([[4,3,2],[1,8,6]])
+
+print(np.matmul(a,b))
+    </pre>
+    <div class="output">
+        [[ 8 35 26]<br>
+         [34 69 50]]
+    </div>
+</div>
+
+</body>
+</html>
                     
 
 
