@@ -1012,8 +1012,52 @@ Car starts with key
 </body>
 </html>
 
-# topic left 
-## production python
+
+#PP-MP-MT
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PP_MP_MT</title>
+
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    background-color: #ffffff;
+    color: #000000;
+}
+pre {
+    background: #f6f8fa;
+    padding: 10px;
+    overflow-x: auto;
+}
+code {
+    color: #d63384;
+}
+</style>
+</head>
+
+<body>
+
+<h1>PP_MP_MT Notebook</h1>
+
+<p>This HTML file was generated from a Jupyter Notebook.</p>
+
+<hr/>
+
+<h2>Notebook Content</h2>
+
+<pre>
+[Your notebook output and code cells are rendered here exactly as in Jupyter]
+</pre>
+
+</body>
+</html>
+
+
 ## numpy
                     
 
