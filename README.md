@@ -126,7 +126,7 @@ print(student["name"])
 
 <h2>For Loop</h2>
 <p>
-A for loop is used to repeat a block of code for a fixed number of times.
+A for loop is used to repeat a block of code for a fixed number of time.
 </p>
 
 <h3>Example:</h3>
