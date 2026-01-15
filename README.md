@@ -1277,6 +1277,91 @@ print("Data Type:", y.dtype)
 </footer>
 
 </body>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NumPy Diagonal Practice</title>
+
+  <!-- Jupyter Notebook Styles -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 20px;
+    }
+    .cell {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+    pre {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 10px;
+      overflow-x: auto;
+      border-radius: 4px;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>NumPy Diagonal Matrix Practice</h1>
+
+  <div class="cell">
+    <h3>Import NumPy</h3>
+    <pre>
+import numpy as np
+    </pre>
+  </div>
+
+  <div class="cell">
+    <h3>Create a Matrix</h3>
+    <pre>
+a = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
+print(a)
+    </pre>
+  </div>
+
+  <div class="cell">
+    <h3>Main Diagonal</h3>
+    <pre>
+print(np.diag(a))
+    </pre>
+  </div>
+
+  <div class="cell">
+    <h3>Reverse Diagonal</h3>
+    <pre>
+print(np.fliplr(a).diagonal())
+    </pre>
+  </div>
+
+  <div class="cell">
+    <h3>Add Diagonal Elements</h3>
+    <pre>
+print(np.sum(np.diag(a)))
+    </pre>
+  </div>
+
+</body>
+</html>
+
 </html>             
 
 
