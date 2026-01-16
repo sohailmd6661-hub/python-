@@ -1367,4 +1367,84 @@ print(np.sum(np.diag(a)))
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PD Notebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Jupyter-like styling -->
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+        .notebook {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            max-width: 1000px;
+            margin: auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 6px;
+        }
+        code {
+            font-family: Consolas, monospace;
+        }
+        .output {
+            background: #f1f1f1;
+            padding: 12px;
+            border-left: 4px solid #4CAF50;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="notebook">
+
+    <h1>Data Analysis using Pandas</h1>
+    <p>This HTML file is converted from a Jupyter Notebook and uploaded to GitHub.</p>
+
+    <h2>Import Libraries</h2>
+    <pre><code>import pandas as pd
+import numpy as np</code></pre>
+
+    <h2>Create DataFrame</h2>
+    <pre><code>data = {
+    "Product": ["Pen", "Book", "Pencil"],
+    "Price": [10, 50, 5]
+}
+
+df = pd.DataFrame(data)
+df</code></pre>
+
+    <div class="output">
+        <strong>Output:</strong>
+        <br>
+        Product | Price <br>
+        Pen | 10 <br>
+        Book | 50 <br>
+        Pencil | 5
+    </div>
+
+    <h2>Conclusion</h2>
+    <p>This notebook demonstrates basic Pandas operations.</p>
+
+</div>
+
+</body>
+</html>
 
