@@ -1448,3 +1448,89 @@ df</code></pre>
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matplotlib Basics</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1f2937;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Matplotlib Basics</h1>
+    <p>Simple Data Visualization Project</p>
+</header>
+
+<section>
+    <h2>About This Project</h2>
+    <p>
+        This project explains the basics of <b>Matplotlib</b>, a Python library
+        used for creating static, animated, and interactive visualizations.
+    </p>
+
+    <h2>Topics Covered</h2>
+    <ul>
+        <li>Line Plot</li>
+        <li>Bar Chart</li>
+        <li>Scatter Plot</li>
+        <li>Histogram</li>
+    </ul>
+
+    <h2>Why Matplotlib?</h2>
+    <p>
+        Matplotlib is widely used in Data Analytics and Data Science
+        for visualizing trends, patterns, and insights from data.
+    </p>
+</section>
+
+<footer>
+    <p>Created by Mohammad Suhail | Data Analytics</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
