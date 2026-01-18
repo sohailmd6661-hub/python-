@@ -1525,7 +1525,7 @@ df</code></pre>
 </section>
 
 <footer>
-    <p>Created by Mohammad Suhail | Data Analytics</p>
+    <p>Created by Mohammad Sohail | Data Analytics</p>
 </footer>
 
 </body>
