@@ -467,6 +467,122 @@ print(a[5])
 
 <body>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House Price Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f4f6f8;
+        }
+        .card {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        button {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="card shadow">
+        <h2>House Price Prediction</h2>
+
+        <form>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label>Bedrooms</label>
+                    <input type="number" class="form-control" placeholder="e.g. 3">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Bathrooms</label>
+                    <input type="number" step="0.5" class="form-control" placeholder="e.g. 2.5">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Sqft Living</label>
+                    <input type="number" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Sqft Lot</label>
+                    <input type="number" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Floors</label>
+                    <input type="number" step="0.5" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Waterfront (0/1)</label>
+                    <input type="number" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>View</label>
+                    <input type="number" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Condition</label>
+                    <input type="number" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Sqft Above</label>
+                    <input type="number" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Sqft Basement</label>
+                    <input type="number" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Year Built</label>
+                    <input type="number" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Year Renovated</label>
+                    <input type="number" class="form-control">
+                </div>
+
+                <div class="col-md-12 mb-3">
+                    <label>City</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary">
+                Predict Price
+            </button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
 <h1>Class, Object & self (Python)</h1>
 
 <h2>Example 1: Class and Object</h2>
