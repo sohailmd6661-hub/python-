@@ -4,7 +4,7 @@
 
 <hr>
 
-<h2>What is Python?</h2>
+<h2>What is Python?</h2> 
 <p>
 Python is a high-level, interpreted, and object-oriented programming language.
 It is easy to learn and widely used for web development, data science,
