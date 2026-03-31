@@ -11,7 +11,7 @@ It is easy to learn and widely used for web development, data science,
 automation, artificial intelligence, and more.
 </p>
 
-<hr>
+<hr>     
 
 <h2>Variables</h2>
 <p>
