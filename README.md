@@ -48,7 +48,7 @@ Data types specify the type of value a variable holds.
 a = 10
 b = 10.5
 c = "Python"
-print(type(a), type(b), type(c))
+print(type(a), type(b), type(c)) 
 </pre>
 
 <hr>
