@@ -12,7 +12,7 @@ automation, artificial intelligence, and more.
 </p>
 
 <hr>     
-
+ 
 <h2>Variables</h2>
 <p>
 A variable is used to store data values in memory.
