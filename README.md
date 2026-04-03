@@ -1647,6 +1647,144 @@ df</code></pre>
 </body>
 </html>
 
+<h1 align="center">🧠 Python OOP - Inheritance</h1>
 
+<p align="center">
+Understanding different types of inheritance using simple Python examples.
+</p>
+
+<hr>
+
+<h2>📌 Types of Inheritance</h2>
+<ul>
+  <li>Single Inheritance</li>
+  <li>Multilevel Inheritance</li>
+  <li>Multiple Inheritance</li>
+  <li>Hierarchical Inheritance</li>
+  <li>Hybrid Inheritance</li>
+</ul>
+
+<hr>
+
+<h2>1️⃣ Single Inheritance</h2>
+<pre><code>
+class Parent:
+    def building(self):
+        print("I have my own building")
+
+class Child(Parent):
+    def job(self):
+        print("I have my own job")
+
+sohail = Child()
+sohail.job()
+sohail.building()
+</code></pre>
+
+<hr>
+
+<h2>2️⃣ Multilevel Inheritance</h2>
+<pre><code>
+class GrandFather:
+    def shopping_mall(self):
+        print("I have my own shopping mall")
+
+class Father(GrandFather):
+    def building(self):
+        print("I have my own building")
+
+class Child(Father):
+    def job(self):
+        print("I have my own job")
+
+sohail = Child()
+sohail.job()
+sohail.building()
+sohail.shopping_mall()
+</code></pre>
+
+<hr>
+
+<h2>3️⃣ Multiple Inheritance</h2>
+<pre><code>
+class Mother:
+    def shopping_mall(self):
+        print("I have my own shopping mall")
+
+class Father:
+    def building(self):
+        print("I have my own building")
+
+class Child(Father, Mother):
+    def job(self):
+        print("I have my own job")
+
+sohail = Child()
+sohail.job()
+sohail.building()
+sohail.shopping_mall()
+</code></pre>
+
+<hr>
+
+<h2>4️⃣ Hierarchical Inheritance</h2>
+<pre><code>
+class Father:
+    def shopping_mall(self):
+        print("I have my own shopping mall")
+
+class B1(Father):
+    def building(self):
+        print("I have my own building")
+
+class B2(Father):
+    def job(self):
+        print("I have my own job")
+
+class B3(Father):
+    def property(self):
+        print("I have rich property")
+
+sohail = B2()
+sohail.job()
+sohail.shopping_mall()
+</code></pre>
+
+<hr>
+
+<h2>5️⃣ Hybrid Inheritance</h2>
+<pre><code>
+class A:
+    def showA(self):
+        print("Class A")
+
+class B(A):
+    def showB(self):
+        print("Class B")
+
+class C(A):
+    def showC(self):
+        print("Class C")
+
+class D(B, C):
+    def showD(self):
+        print("Class D")
+
+obj = D()
+obj.showA()
+obj.showB()
+obj.showC()
+obj.showD()
+</code></pre>
+
+<hr>
+
+<h2>🚀 Author</h2>
+<p>Mohammed Sohail</p>
+
+<hr>
+
+<h2>⭐ Note</h2>
+<p>This project demonstrates all inheritance types in Python for beginners and interview preparation.</p>
 
 
